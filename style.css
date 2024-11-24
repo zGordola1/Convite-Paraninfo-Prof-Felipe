@@ -1,0 +1,91 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #000; /* Fundo preto */
+    color: #00ff00; /* Texto verde neon */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    max-width: 600px;
+    background-color: #000; /* Fundo interno preto */
+    padding: 20px;
+    border: 1px solid #00ff00; /* Borda verde neon */
+    border-radius: 10px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #00ff00; /* Verde neon */
+}
+
+main p {
+    margin: 10px 0;
+    line-height: 1.6;
+}
+
+strong {
+    color: #00ff00; /* Destaque em verde neon */
+}
+
+footer p {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #00ff00;
+    font-style: italic;
+}
+
+/* Botões */
+.buttons {
+    margin-top: 20px;
+}
+
+button {
+    background-color: #00ff00;
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-family: 'Courier New', Courier, monospace;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 5px;
+    transition: transform 0.2s ease;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+/* Mensagem */
+.hidden {
+    display: none;
+    margin-top: 20px;
+    font-size: 2rem; /* Texto maior */
+    font-weight: bold; /* Negrito */
+    color: #ff0000; /* Vermelho vibrante */
+    text-align: center; /* Centraliza o texto */
+    animation: blink 1s infinite; /* Animação piscante */
+}
+
+/* Animação para piscar o texto */
+@keyframes blink {
+    0%, 50%, 100% {
+        opacity: 1;
+    }
+    25%, 75% {
+        opacity: 0.5;
+    }
+}
